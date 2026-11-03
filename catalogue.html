@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Catalogue — Bibliothèque</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="site-header"><nav class="navbar container"><a class="brand" href="index.html">Biblio<span>thèque</span></a><button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><div class="nav-links"><a href="index.html">Accueil</a><a class="active" href="catalogue.html">Catalogue</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a></div></nav></header>
+<main class="container section">
+  <p class="eyebrow">À explorer</p><h1>Notre catalogue</h1><p class="muted page-intro">Recherchez un livre par son titre, son auteur ou sa catégorie.</p>
+  <label class="search-label" for="search-input">Rechercher un livre</label>
+  <input id="search-input" class="search-input" type="search" placeholder="Ex. : Le Petit Prince, Antoine..." autocomplete="off">
+  <p id="result-count" class="muted" aria-live="polite"></p>
+  <div id="catalogue-grid" class="book-grid"></div>
+  <p id="empty-state" class="empty-state" hidden>Aucun livre ne correspond à votre recherche.</p>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><p>© 2026 Mini Bibliothèque</p><p>Un projet web collaboratif</p></div></footer>
+<script src="js/data.js"></script><script src="js/common.js"></script><script src="js/catalogue.js"></script>
+</body></html>
